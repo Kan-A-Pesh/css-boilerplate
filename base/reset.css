@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Only show focus outline when the user is tabbing (not when clicking) */
+*:focus {
+    outline: none;
+}
+
+*:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 4px;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    scroll-behavior: smooth;
+
+    position: relative;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    /* Prevent the rubber band effect when the user scrolls to the top or bottom of the page (WebKit only) */
+    overscroll-behavior: none;
+
+    /* Prevent the browser from synthesizing missing typefaces */
+    font-synthesis: none;
+
+    color: var(--color-white);
+    /* UI controls color (example: range input) */
+    accent-color: var(--color-white);
+
+    /* Because overscroll-behavior: none only works on WebKit, a background color is set that will show when overscroll occurs  */
+    background: var(--color-black-1);
+}
+
+/* Remove unintuitive behaviour such as gaps around media elements.  */
+img,
+picture,
+video,
+canvas,
+svg,
+iframe {
+    display: block;
+}
+
+/* Avoid text overflow */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+strong {
+    overflow-wrap: break-word;
+}
+
+/* Inherit fonts for inputs and buttons */
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+input {
+    border: none;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+button:disabled {
+    color: inherit;
+}

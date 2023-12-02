@@ -1,0 +1,32 @@
+:root {
+    --unit: 0.5;
+    --margins: 32px;
+}
+
+@media only screen and (min-width: 600px) {
+    :root {
+        --unit: 0.575;
+        --margins: 64px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    :root {
+        --unit: 0.675;
+        --margins: 128px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    :root {
+        --unit: 0.725;
+        --margins: 160px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    :root {
+        --unit: 0.8;
+        --margins: 192px;
+    }
+}
